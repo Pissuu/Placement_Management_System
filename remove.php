@@ -5,7 +5,7 @@ if(mysqli_connect_errno())
 	echo "error";
 }
 $user_id=$_POST['user_id'];
-$sql="delete from registered where User_ID='$user_id'";
+$sql="delete from student where user_id='$user_id'";
 $result=$con->query($sql);
 ?>
 <!DOCTYPE html>

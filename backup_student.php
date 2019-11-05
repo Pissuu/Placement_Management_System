@@ -42,52 +42,24 @@
       </tr>
   
 <?php
-
-$mysql_hostname = "localhost";
-$mysql_user = "root";
-$mysql_password = "" ;
-$mysql_database = "placement_mngmt_syst";
-$db = mysqli_connect($mysql_hostname,$mysql_user,$mysql_password,$mysql_database) or die ("could not connect");
-
-echo "<table style='border: solid 1px black;'>";
-echo "<tr><th></th></tr>";
-class TableRows extends RecursiveIteratorIterator {
-    function __construct($it) {
-        parent::__construct($it, self::LEAVES_ONLY);
+require_once 'includes/dbconnect.php';
+$sql="select * from Student ";
+$result=$CONN-> query($sql);
+if($result > 0)
+{
+    while($row=$result-> fetch_assoc())
+    {
+    echo "<tr><td>".$row[""]."</td><td>".$row[""]."</td><td>".$row[""]."</td></tr>";
     }
-
-    function current() {
-        return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
-    }
-
-    function beginChildren() {
-        echo "<tr>";
-    }
-
-    function endChildren() {
-        echo "</tr>" . "\n";
-    }
+    echo "</table>";
 }
-
-
-try {
-    $conn = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_database", $mysql_user, $mysql_password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT * from Student");
-    $stmt->execute();
-
-    // set the resulting array to associative
-    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-        echo $v;
-    }
+else
+{
+echo "0 result";
 }
-catch(PDOException $e) {
-    echo "Error: " . $e->getMessage();
-}
-$conn = null;
-echo "</table>";
+$CONN-> close();
 ?>
+</table>
 <div>
                            <p> <button class="btn btn--radius-2 btn--red" type="submit" name="Remove" style="margin-top:100px;">Remove</button></p>
                            
