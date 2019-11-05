@@ -1,17 +1,16 @@
 <?php
 $con=mysqli_connect("localhost","root","","placement_mngmt_syst");
-if(mysqli_connect_errno())
+if(isset($_POST['submit']))
+{
+    if(mysqli_connect_errno())
 {
 	echo "error";
 }
-$show_id=$_POST['show_id'];
-$show_name=$_POST['show_name'];
-$director=$_POST['director'];
-$language=$_POST['language'];
-$description=$_POST['description'];
-$genre_id=$_POST['genre_id'];
-$sql="insert into shows (SHOW_ID,SHOW_NAME,DIRECTOR,LANG,DESCRIPTION,GENRE_ID) VALUES ('$show_id','$show_name','$director','$language','$description','$genre_id')";
+$user_id=$_POST['first_name'];
+$comp_id=$_POST['company'];
+$sql="insert into registered (User_id,Company_id) VALUES ('$user_id','$comp_id')";
 $result=$con->query($sql);
+}
 ?>
 
 <!DOCTYPE html>
@@ -52,20 +51,20 @@ $result=$con->query($sql);
                 <div class="card-body">
                     <form method="POST" action="Register.php">
                         <div class="form-row m-b-55">
-                            <div class="name">Name</div>
+                            <div class="name">User Name</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
                                             <input class="input--style-5" type="text" name="first_name">
-                                            <label class="label--desc">first name</label>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name">Company</div>
+                            <div class="name">Company Name</div>
                             <div class="value">
                                 <div class="input-group">
                                     <input class="input--style-5" type="text" name="company">
@@ -125,13 +124,13 @@ $result=$con->query($sql);
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="radio-container">No
-                                    <input type="radio" name="exist">
+                                    <input type="radio" name="exist1">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Register</button>
                         </div>
                     </form>
                 </div>

@@ -40,7 +40,7 @@ session_start();
 
               if($rows>0){
                   $row = mysqli_fetch_assoc($loginAction);
-                  if( $row['ADMIN_EMAIL']==$email && $row['ADMIN_PASSWORD']==$teamPassword ){
+                  if( $row['Admin_email']==$email && $row['Admin_password']==$teamPassword ){
                       echo " <h2> Login Successful </h2>";
                       $_SESSION['userID'] = $row['user_id'];
                       $_SESSION['email']=$email;

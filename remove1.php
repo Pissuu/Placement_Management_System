@@ -1,17 +1,13 @@
 <?php
 $con=mysqli_connect("localhost","root","","placement_mngmt_syst");
-if(isset($_POST['submit']))
-{if(mysqli_connect_errno())
+if(mysqli_connect_errno())
 {
 	echo "error";
 }
-$user_id=$_POST['first_name'];
-$comp_id=$_POST['company'];
-$sql="insert into registered (User_id,Company_id) VALUES ('$user_id','$comp_id')";
+$user_id=$_POST['user_id'];
+$sql="delete from student where User_ID='$user_id'";
 $result=$con->query($sql);
-}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,12 +41,25 @@ $result=$con->query($sql);
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Registered Students</h2>
+                    <h2 class="title">Remove Candidate</h2>
                 </div>
                 <div class="card-body">
                     <form method="POST" action="remove.php">
+                        <div class="form-row m-b-55">
+                            <div class="name">User ID</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="user_id">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div>
-                            <a class="btn btn--radius-2 btn--red" href="remove.php" type="button" name="remove">Remove</button>
+                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Remove</button></p>
                         </div>
                     </form>
                 </div>

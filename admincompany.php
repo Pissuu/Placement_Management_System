@@ -37,7 +37,7 @@
                 <a class="nav-link" href="index.html">Sign out</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="students.php">Student List</a>
+                <a class="nav-link" href="student.php">Student List</a>
               </li>
             </ul>
           </div>
