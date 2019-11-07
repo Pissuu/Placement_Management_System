@@ -36,9 +36,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Sign out</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="student.php">Student List</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -46,13 +43,13 @@
     </header>
       <!--END header -->
 
-    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(Images/handshake.jpg);">
+    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(Images/aback.png);">
       <div class="container">
         <div class="row align-items-center site-hero-inner justify-content-center">
           <div class="col-md-8 text-center">
             <div class="mb-5 element-animate">
-              <h1>Welcome User.</h1>
-              <p>Placement Drive dates</p>
+              <h1>Welcome</h1>
+              <p></p>
             </div>
           </div>
           </div>
@@ -61,78 +58,20 @@
     </section>
     <!-- END section -->
 <form action="Register.php" method="post">
-    <section class="feature-destination">
+    <section class="feature-destination" style="margin-left:350px;">
       <div class="container">
         <div class="row">
           <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/accenture.png')">
+            <a href="Registered.php" class="img-bg" style="background-image: url('images/reg.png')">
               <div class="text">
-                <h2>Accenture</h2>
                 <p>Registered Candidates</p>
               </div>
             </a>
           </div>
           <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/kpmg.png')">
+            <a href="student.php" class="img-bg" style="background-image: url('images/student.jfif')">
               <div class="text">
-                <h2>KPMG</h2>
-                <p>Registered Candidates</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/betsol.jpg')">
-              <div class="text">
-                <h2>Betsol</h2>
-                <p>Registered Candidates</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/thoughtclan.png')">
-              <div class="text">
-                <h2>Thoughtclan Technologies</h2>
-                <p>Registered Candidates</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/mu.jpg')">
-              <div class="text">
-                <h2>MU Sigma</h2>
-                <p>Registered Candidates</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/dell.png')">
-              <div class="text">
-                <h2>DELL</h2>
-                <p>Registered Candidates</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/infosys.png')">
-              <div class="text">
-                <h2>Infosys</h2>
-                <p>Registered Candidates</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/cognizant.jpg')">
-              <div class="text">
-                <h2>Cognizant</h2>
-                <p>Registered Candidates</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="Registered.php" class="img-bg" style="background-image: url('images/deltax.jpg')">
-              <div class="text">
-                <h2>DeltaX</h2>
-                <p>Registered Candidates</p>
+                <p>Student List</p>
               </div>
             </a>
           </div>
