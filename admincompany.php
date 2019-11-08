@@ -34,7 +34,7 @@
                 <a class="nav-link active" href="admincompany.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Sign out</a>
+                <a class="nav-link" href="logout.php">Sign out</a>
               </li>
             </ul>
           </div>
@@ -58,7 +58,7 @@
     </section>
     <!-- END section -->
 <form action="Register.php" method="post">
-    <section class="feature-destination" style="margin-left:350px;">
+    <section class="feature-destination" >
       <div class="container">
         <div class="row">
           <div class="col-md-4 element-animate ">
@@ -72,6 +72,13 @@
             <a href="student.php" class="img-bg" style="background-image: url('images/student.jfif')">
               <div class="text">
                 <p>Student List</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a href="company.php" class="img-bg" style="background-image: url('images/2963987.jpg')">
+              <div class="text">
+                <p>Company List</p>
               </div>
             </a>
           </div>

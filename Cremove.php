@@ -4,8 +4,8 @@ if(mysqli_connect_errno())
 {
 	echo "error";
 }
-$user_id=$_POST['user_id'];
-$sql="insert into student ;
+$co_id=$_POST['c_id'];
+$sql="delete from company where company_id='$co_id'";
 $result=$con->query($sql);
 ?>
 <!DOCTYPE html>
@@ -44,14 +44,14 @@ $result=$con->query($sql);
                     <h2 class="title">Remove Company</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="add.php">
+                    <form method="POST" action="Cremove.php">
                         <div class="form-row m-b-55">
-                            <div class="name">User ID</div>
+                            <div class="name">Company ID</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="user_id">
+                                            <input class="input--style-5" type="text" name="c_id">
                                             
                                         </div>
                                     </div>

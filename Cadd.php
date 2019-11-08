@@ -5,12 +5,11 @@ if(mysqli_connect_errno())
 	echo "error";
 }
 $user_id=$_POST['user_id'];
-$sql="insert into student ;
+$sql="insert into company ;
 $result=$con->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -46,7 +45,7 @@ $result=$con->query($sql);
                 <div class="card-body">
                     <form method="POST" action="add.php">
                         <div class="form-row m-b-55">
-                            <div class="name">User ID</div>
+                            <div class="name">Company ID</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">

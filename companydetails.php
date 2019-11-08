@@ -34,7 +34,7 @@
                 <a class="nav-link active" href="coe.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Sign out</a>
+                <a class="nav-link" href="logout.php">Sign out</a>
               </li>
             </ul>
           </div>
@@ -57,12 +57,12 @@
       </div>
     </section>
     <!-- END section -->
-<form action="Register.php" method="post">
+<form action="companydetails.php" method="post">
     <section class="feature-destination">
       <div class="container">
         <div class="row">
           <div class="col-md-4 element-animate ">
-            <a href="Register.php" class="img-bg" style="background-image: url('images/Accenture.png');">
+            <a href="companydetails.php" class="img-bg" style="background-image: url('images/Accenture.png');">
               <div class="text">
                 <p>Company 1</p>
               </div>
@@ -76,28 +76,28 @@
             </a>
           </div>
           <div class="col-md-4 element-animate ">
-            <a href="Register.php" class="img-bg" style="background-image: url('images/betsol.jpg');">
+            <a href="companydetails.php" class="img-bg" style="background-image: url('images/betsol.jpg');">
               <div class="text">
                 <p>Company 3</p>
               </div>
             </a>
           </div>
           <div class="col-md-4 element-animate ">
-            <a href="Register.php" class="img-bg" style="background-image: url('images/cognizant.jpg');">
+            <a href="companydetails.php" class="img-bg" style="background-image: url('images/cognizant.jpg');">
               <div class="text">
                 <p>Company 4</p>
               </div>
             </a>
           </div>
           <div class="col-md-4 element-animate ">
-            <a href="Register.php" class="img-bg" style="background-image: url('images/thoughtclan.png');">
+            <a href="companydetails.php" class="img-bg" style="background-image: url('images/thoughtclan.png');">
               <div class="text">
                 <p>Company 5</p>
               </div>
             </a>
           </div>
           <div class="col-md-4 element-animate ">
-            <a href="Register.php" class="img-bg" style="background-image: url('images/dell.png');">
+            <a href="companydetails.php" class="img-bg" style="background-image: url('images/dell.png');">
               <div class="text">
                 <p>Company 6</p>
               </div>
