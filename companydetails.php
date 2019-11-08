@@ -1,118 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
+  <head>
+    <title>Placement Management System</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
 
-    <!-- Title Page-->
-    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway" rel="stylesheet">
 
-    <!-- Icons font CSS-->
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-    <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
-    <!-- Main CSS-->
-    <link href="css/main.css" rel="stylesheet" media="all">
-</head>
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <header role="banner">
+     
+      <nav class="navbar navbar-expand-md navbar-dark bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="coe.php">Placement Management System</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
-        <div class="wrapper wrapper--w790">
-            <div class="card card-5">
-                <div class="card-heading">
-                    <h2 class="title">Company List</h2>
-                </div>
-                <div class="card-body">
-                <form method="POST" action="remove1.php">
-                <table class="col-sm-12" style="width:100%">
-      <tr>
-          <th>Company Name</th>
-          <th>Branch</th>
-      </tr>
-  
-<?php
-
-$mysql_hostname = "localhost";
-$mysql_user = "root";
-$mysql_password = "" ;
-$mysql_database = "placement_mngmt_syst";
-$db = mysqli_connect($mysql_hostname,$mysql_user,$mysql_password,$mysql_database) or die ("could not connect");
-
-echo "<table style='border: solid 1px black;'>";
-echo "<tr><th></th></tr>";
-class TableRows extends RecursiveIteratorIterator {
-    function __construct($it) {
-        parent::__construct($it, self::LEAVES_ONLY);
-    }
-
-    function current() {
-        return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
-    }
-
-    function beginChildren() {
-        echo "<tr>";
-    }
-
-    function endChildren() {
-        echo "</tr>" . "\n";
-    }
-}
-
-
-try {
-    $conn = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_database", $mysql_user, $mysql_password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT * from Student");
-    $stmt->execute();
-
-    // set the resulting array to associative
-    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-        echo $v;
-    }
-}
-catch(PDOException $e) {
-    echo "Error: " . $e->getMessage();
-}
-$conn = null;
-echo "</table>";
-?>
-<div>
-                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="Remove" style="margin-top:100px;">Remove</button></p>
-                           
-                        </div>
-</form>
-<form method="POST" action="add.php">
-    <div>
-    <p> <button class="btn btn--radius-2 btn--red" type="submit" name="Add" style="margin-top:20px;">Add</button></p>
-</div>
-                </div>
-            </div>
+          <div class="collapse navbar-collapse navbar-light" id="navbarsExample05">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="coe.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Sign out</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </nav>
+    </header>
+      <!--END header -->
 
-    <!-- Jquery JS-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
+    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(Images/16251.jpg);">
+      <div class="container">
+        <div class="row align-items-center site-hero-inner justify-content-center">
+          <div class="col-md-8 text-center">
+            <div class="mb-5 element-animate">
+              <h1>Welcome.</h1>
+              <p>Company Details</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END section -->
+<form action="Register.php" method="post">
+    <section class="feature-destination">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 element-animate ">
+            <a href="Register.php" class="img-bg" style="background-image: url('images/Accenture.png');">
+              <div class="text">
+                <p>Company 1</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a href="companydetails.php" class="img-bg" style="background-image: url('images/kpmg.png');">
+              <div class="text">
+                <p>Company 2</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a href="Register.php" class="img-bg" style="background-image: url('images/betsol.jpg');">
+              <div class="text">
+                <p>Company 3</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a href="Register.php" class="img-bg" style="background-image: url('images/cognizant.jpg');">
+              <div class="text">
+                <p>Company 4</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a href="Register.php" class="img-bg" style="background-image: url('images/thoughtclan.png');">
+              <div class="text">
+                <p>Company 5</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a href="Register.php" class="img-bg" style="background-image: url('images/dell.png');">
+              <div class="text">
+                <p>Company 6</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+</form>
+    <!-- END section -->
+   
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <h3 class="mb-4">About</h3>
+            <p class="mb-4"></p>
+            <ul class="list-unstyled ">
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-location"></span></span><span class="">BENGALURU</span></li>
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-ios-telephone"></span></span><span class="">080-23216455</span></li>
+              <li class="d-flex"><span class="mr-3"><span class="icon ion-email"></span></span><span class="">ABHI.JAG@GMAIL.COM</span></li>
+            </ul>
+          </div>
+          
+          <div class="col-md-3">
+            <h3>Connect</h3>
+            <p>
+              <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+              <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+              <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+            </p>
+          </div>
+        </div>
+    
+    </footer>
+    <!-- END footer -->
+    
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
 
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-<!-- end document-->
