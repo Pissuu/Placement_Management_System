@@ -49,12 +49,12 @@ session_start();
                   }
                   else{
                       echo " <h2>Incorrect Password</h2>";
-                      echo " <a href='./login.html' class='btn btn-danger' style='width:50%;margin:auto'><h4>Retry</h4></a> ";
+                      echo " <a href='./alogin.html' class='btn btn-danger' style='width:50%;margin:auto'><h4>Retry</h4></a> ";
                   }
               }
               else{
                   echo " <h2> User Not Found </h2>";
-                  echo " <a href='./login.html' class='btn btn-danger' style='width:50%;margin:auto'><h4>Retry</h4></a>";
+                  echo " <a href='./alogin.html' class='btn btn-danger' style='width:50%;margin:auto'><h4>Retry</h4></a>";
               }
 
               mysqli_close($CONN);
