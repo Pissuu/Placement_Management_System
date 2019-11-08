@@ -1,0 +1,18 @@
+try {
+    $conn = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_database", $mysql_user, $mysql_password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $conn->prepare("SELECT * FROM alumni");
+    $stmt->execute();
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) 
+    {
+        if($k!="image")
+        {
+            echo $v;
+        }
+    }  
+$sql = "SELECT * from alumni where company_id=1056";
+$sth = $db->query($sql);
+$result=mysqli_fetch_array($sth);
+echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['image'] ).'"/>';
+}
