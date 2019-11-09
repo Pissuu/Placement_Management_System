@@ -21,7 +21,7 @@ session_start();
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body style="background-image: url(images/success.jpg);">
     <div class="container">
       <div class="container" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)">
         <div class="row">
