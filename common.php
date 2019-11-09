@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -46,13 +43,13 @@
     </header>
       <!--END header -->
 
-    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(Images/16251.jpg);">
+    <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(Images/1830.jpg);">
       <div class="container">
         <div class="row align-items-center site-hero-inner justify-content-center">
           <div class="col-md-8 text-center">
             <div class="mb-5 element-animate">
               <h1>Welcome.</h1>
-              <p>Company Details</p>
+              <p></p>
             </div>
           </div>
           </div>
@@ -60,49 +57,21 @@
       </div>
     </section>
     <!-- END section -->
-<form action="common.php" method="post">
-    <section class="feature-destination">
+<!--<form action="Register.php" method="post">
+    <section class="feature-destination" style="margin-left:350px;">
       <div class="container">
         <div class="row">
           <div class="col-md-4 element-animate ">
-            <a href="common.php" class="img-bg" style="background-image: url('images/Accenture.png');">
-              <div class="text" name="Accenture">
-                <p>Company 1</p>
+            <a href="Register.php" class="img-bg" style="background-image: url('images/register.jpg');">
+              <div class="text">
+                <p>Register Now</p>
               </div>
             </a>
           </div>
           <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/kpmg.png');">
+            <a href="companydetails.php" class="img-bg" style="background-image: url('images/Company.jfif');">
               <div class="text">
-                <p>Company 2</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/betsol.jpg');">
-              <div class="text">
-                <p>Company 3</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/cognizant.jpg');">
-              <div class="text">
-                <p>Company 4</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/thoughtclan.png');">
-              <div class="text">
-                <p>Company 5</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/dell.png');">
-              <div class="text">
-                <p>Company 6</p>
+                <p>Learn more</p>
               </div>
             </a>
           </div>
