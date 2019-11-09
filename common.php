@@ -34,7 +34,7 @@
                 <a class="nav-link active" href="coe.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="logout.php">Sign out</a>
+                <a class="nav-link" href="index.html">Sign out</a>
               </li>
             </ul>
           </div>

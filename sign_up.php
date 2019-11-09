@@ -31,12 +31,12 @@ session_start();
               error_reporting(E_ERROR | E_PARSE);
 
               require_once 'includes/dbconnect.php';
-
+              $us=$_POST["usn"];
               $userName = $_POST["userName"];
               $userPassword = $_POST["password"];
               $userEmail = $_POST["userEmail"];
 
-                  $SQL_QUERY = "INSERT INTO user (USER_NAME, USER_EMAIL, USER_PASSWORD) VALUES( '".$userName."','".$userEmail."','".$userPassword."')";
+                  $SQL_QUERY = "INSERT INTO user (USER_ID, USER_NAME, USER_EMAIL, USER_PASSWORD) VALUES( '".$us."','".$userName."','".$userEmail."','".$userPassword."')";
 
                   if ( mysqli_query($CONN, $SQL_QUERY)) {
                        echo " <h2> Sign Up Successful </h2>";
