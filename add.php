@@ -5,7 +5,7 @@ if(mysqli_connect_errno())
 	echo "error";
 }
 $user_id=$_POST['user_id'];
-$sql="insert into student ;
+$sql="insert into student ";
 $result=$con->query($sql);
 ?>
 <!DOCTYPE html>
