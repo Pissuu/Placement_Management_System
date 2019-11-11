@@ -110,7 +110,7 @@ class TableRows extends RecursiveIteratorIterator {
 try {
     $conn = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_database", $mysql_user, $mysql_password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT a.Company_ID,a.Alumni_id,a.Alumni_name,a.Alumni_email,a.Alumni_phone_no from alumni a,company c where c.company_name='".$company_name."' and c.company_id=a.company_id");
+    $stmt = $conn->prepare("SELECT c.net_worth,c.share_price,c.annual_revenue,a.Company_ID,a.Alumni_id,a.Alumni_name,a.Alumni_email,a.Alumni_phone_no from alumni a,company c where c.company_name='".$company_name."' and c.company_id=a.company_id");
     $stmt->execute();
 
     // set the resulting array to associative
