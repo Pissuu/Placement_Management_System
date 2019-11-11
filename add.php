@@ -1,13 +1,4 @@
-<?php
-$con=mysqli_connect("localhost","root","","placement_mngmt_syst");
-if(mysqli_connect_errno())
-{
-	echo "error";
-}
-$user_id=$_POST['user_id'];
-$sql="insert into student ";
-$result=$con->query($sql);
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,10 +32,10 @@ $result=$con->query($sql);
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Remove Company</h2>
+                    <h2 class="title">Add Student</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="add.php">
+                    <form method="POST" action="add2.php">
                         <div class="form-row m-b-55">
                             <div class="name">User ID</div>
                             <div class="value">
@@ -58,8 +49,75 @@ $result=$con->query($sql);
                                 </div>
                             </div>
                         </div>
+                        <div class="name">Branch ID</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="branch_id">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="name">Phone number</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="st_ph_no">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="name">10th marks</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="st_10th">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">12th marks</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="st_12th">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">CGPA</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="st_cgpa">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name">Backlogs</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="backlogs">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div>
-                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Remove</button></p>
+                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Add</button></p>
                         </div>
                     </form>
                 </div>

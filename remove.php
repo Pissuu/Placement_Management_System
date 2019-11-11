@@ -1,13 +1,4 @@
-<?php
-$con=mysqli_connect("localhost","root","","placement_mngmt_syst");
-if(mysqli_connect_errno())
-{
-	echo "error";
-}
-$user_name=$_POST['user_name'];
-$sql="delete from registered where User_ID=user.User_ID and user.User_Name='$user_name'";
-$result=$con->query($sql);
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,9 +35,9 @@ $result=$con->query($sql);
                     <h2 class="title">Remove Candidate</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="remove.php">
+                    <form method="POST" action="remove2.php">
                         <div class="form-row m-b-55">
-                            <div class="name">User Name</div>
+                            <div class="name">User ID</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">
