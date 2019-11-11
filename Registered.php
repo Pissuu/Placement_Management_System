@@ -1,16 +1,3 @@
-<?php
-$con=mysqli_connect("localhost","root","","placement_mngmt_syst");
-if(isset($_POST['submit']))
-{if(mysqli_connect_errno())
-{
-	echo "error";
-}
-$user_id=$_POST['first_name'];
-$comp_id=$_POST['company'];
-$sql="insert into registered (User_id,Company_id) VALUES ('$user_id','$comp_id')";
-$result=$con->query($sql);
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">

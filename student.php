@@ -73,14 +73,16 @@ class TableRows extends RecursiveIteratorIterator {
 try {
     $conn = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_database", $mysql_user, $mysql_password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT * from Student");
-    $stmt->execute();
+     $stmt = $conn->prepare("SELECT u.user_id, u.User_name,b.Branch_Name,b.Semester from student s, user u, branch b where u.USER_ID= s.user_id and s.Branch_ID=b.Branch_ID ");
+     $stmt->execute();
+   
 
     // set the resulting array to associative
     $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
     foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
         echo $v;
-    }
+            }
+
 }
 catch(PDOException $e) {
     echo "Error: " . $e->getMessage();

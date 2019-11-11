@@ -4,8 +4,8 @@ if(mysqli_connect_errno())
 {
 	echo "error";
 }
-$user_id=$_POST['user_id'];
-$sql="delete from student where user_id='$user_id'";
+$user_name=$_POST['user_name'];
+$sql="delete from registered where User_ID=user.User_ID and user.User_Name='$user_name'";
 $result=$con->query($sql);
 ?>
 <!DOCTYPE html>
@@ -46,12 +46,12 @@ $result=$con->query($sql);
                 <div class="card-body">
                     <form method="POST" action="remove.php">
                         <div class="form-row m-b-55">
-                            <div class="name">User ID</div>
+                            <div class="name">User Name</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="user_id">
+                                            <input class="input--style-5" type="text" name="user_name">
                                             
                                         </div>
                                     </div>
