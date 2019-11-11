@@ -41,7 +41,7 @@ session_start();
               if($rows>0){
                   $row = mysqli_fetch_assoc($loginAction);
                   if( $row['User_email']==$email && $row['User_password']==$teamPassword ){
-                      echo " <h2> Login Success Successful </h2>";
+                      echo " <h2> Login Successful </h2>";
                       $_SESSION['userID'] = $row['user_id'];
                       $_SESSION['email']=$email;
                       $_SESSION['userName'] = $row['user_name'];

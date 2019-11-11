@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -44,7 +41,7 @@
         </div>
       </nav>
     </header>
-      <!--END header -->
+ <!--END header -->
 
     <section class="site-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(Images/16251.jpg);">
       <div class="container">
@@ -59,60 +56,19 @@
         </div>
       </div>
     </section>
+       
     <!-- END section -->
-<form action="common.php" method="post">
-    <section class="feature-destination">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 element-animate ">
-            <a href="common.php" class="img-bg" style="background-image: url('images/Accenture.png');">
-              <div class="text" name="Accenture">
-                <p>Company 1</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/kpmg.png');">
-              <div class="text">
-                <p>Company 2</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/betsol.jpg');">
-              <div class="text">
-                <p>Company 3</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/cognizant.jpg');">
-              <div class="text">
-                <p>Company 4</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/thoughtclan.png');">
-              <div class="text">
-                <p>Company 5</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 element-animate ">
-            <a href="companydetails.php" class="img-bg" style="background-image: url('images/dell.png');">
-              <div class="text">
-                <p>Company 6</p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+<form name="myLetters" action="common.php" method="POST">
+&nbsp &nbsp &nbsp &nbsp &nbsp<input type="submit" name="company" value="accenture" /><img src="images/Accenture.png" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="submit" name="company" value="kpmg"/> <img src="images/kpmg.png" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="submit" name="company" value="betsol"/> <img src="images/betsol.jpg" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="submit" name="company" value="cognizant"/> <img src="images/cognizant.jpg" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="submit" name="company" value="thoughtclan" /> <img src="images/thoughtclan.png" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="submit" name="company" value="dell" img src="images/Accenture.png" height="42" width="42"/> <img src="images/dell.png" height="85"/>
 </form>
-    <!-- END section -->
-   
-    <footer class="site-footer">
+  
+ 
+   <footer class="site-footer">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-4">

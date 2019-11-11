@@ -1,6 +1,33 @@
+
 <!doctype html>
 <html lang="en">
   <head>
+<style type="text/css">
+  body{
+    color: white;
+  }
+table {
+margin: 8px;
+}
+
+th {
+font-family: Arial, Helvetica, sans-serif;
+font-size: .7em;
+background: #666;
+color: white;
+padding: 2px 6px;
+border-collapse: separate;
+border: 1px solid #000;
+}
+
+td {
+  color:red;
+font-family: Arial, Helvetica, sans-serif;
+font-size: .7em;
+
+border: 1px solid #DDD;
+}
+</style>
     <title>Placement Management System</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +45,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+
     <header role="banner">
      
       <nav class="navbar navbar-expand-md navbar-dark bg-light">
@@ -48,8 +75,63 @@
         <div class="row align-items-center site-hero-inner justify-content-center">
           <div class="col-md-8 text-center">
             <div class="mb-5 element-animate">
+      
               <h1>Welcome.</h1>
-              <p></p>
+<?php
+$company_name=$_POST['company'];
+echo '<font color="green">' . $company_name. '</font><br>';
+$mysql_hostname = "localhost";
+$mysql_user = "root";
+$mysql_password = "" ;
+$mysql_database = "placement_mngmt_syst";
+$db = mysqli_connect($mysql_hostname,$mysql_user,$mysql_password,$mysql_database) or die ("could not connect");
+
+echo "<table style='border: solid 1px black;'>";
+echo "<tr><th></th></tr>";
+class TableRows extends RecursiveIteratorIterator {
+    function __construct($it) {
+        parent::__construct($it, self::LEAVES_ONLY);
+    }
+
+    function current() {
+        return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
+    }
+
+    function beginChildren() {
+        echo "<tr>";
+    }
+
+    function endChildren() {
+        echo "</tr>" . "\n";
+    }
+}
+
+
+try {
+    $conn = new PDO("mysql:host=$mysql_hostname;dbname=$mysql_database", $mysql_user, $mysql_password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $conn->prepare("SELECT a.Company_ID,a.Alumni_id,a.Alumni_name,a.Alumni_email,a.Alumni_phone_no from alumni a,company c where c.company_name='".$company_name."' and c.company_id=a.company_id");
+    $stmt->execute();
+
+    // set the resulting array to associative
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+        echo $v;
+
+    }
+    $sql = "SELECT a.image FROM alumni a,company c WHERE c.company_name='".$company_name."' and c.company_id=a.company_id";
+$sth = $db->query($sql);
+$result=mysqli_fetch_array($sth);
+echo '<img src="data:image/jpeg;base64,'.base64_encode( $result['image'] ).'"height="150" width="150" / >';
+}
+catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+$conn = null;
+echo "</table>";
+?>
+</div>
+
             </div>
           </div>
           </div>
@@ -118,5 +200,6 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/main.js"></script>
+    <div>
   </body>
 </html>
