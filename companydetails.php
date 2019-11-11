@@ -58,13 +58,62 @@
     </section>
        
     <!-- END section -->
-<form name="myLetters" action="common.php" method="POST">
-&nbsp &nbsp &nbsp &nbsp &nbsp<input type="submit" name="company" value="accenture" /><img src="images/Accenture.png" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-<input type="submit" name="company" value="kpmg"/> <img src="images/kpmg.png" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-<input type="submit" name="company" value="betsol"/> <img src="images/betsol.jpg" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-<input type="submit" name="company" value="cognizant"/> <img src="images/cognizant.jpg" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-<input type="submit" name="company" value="thoughtclan" /> <img src="images/thoughtclan.png" height="85"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-<input type="submit" name="company" value="dell" img src="images/Accenture.png" height="42" width="42"/> <img src="images/dell.png" height="85"/>
+
+<form name="myLetters" action="common.php" method="post">
+    <section class="feature-destination">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 element-animate ">
+            <a class="img-bg" style="background-image: url('images/Accenture.png');">
+              <div class="text" >
+                <p></p>
+                &nbsp &nbsp &nbsp &nbsp &nbsp<input style="border:1px solid red; background-color: transparent; margin-left:40px; margin-top:120px;"type="submit" name="company" value="accenture" />&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a class="img-bg" style="background-image: url('images/kpmg.png');">
+              <div class="text">
+                <p></p>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input style="border:1px solid red;background-color: transparent; margin-left:20px; margin-top:120px" type="submit" name="company" value="kpmg"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a class="img-bg" style="background-image: url('images/cognizant.jpg');">
+              <div class="text">
+                <p></p>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input style="border:1px solid red;background-color: transparent; margin-left:20px; margin-top:120px" type="submit" name="company" value="cognizant"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a class="img-bg" style="background-image: url('images/thoughtclan.png');">
+              <div class="text">
+                <p></p>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input style="border:1px solid red;background-color: transparent; margin-left:20px; margin-top:120px" type="submit" name="company" value="thoughtclan"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a class="img-bg" style="background-image: url('images/betsol.jpg');">
+              <div class="text">
+                <p></p>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input style="border:1px solid red;background-color: transparent; margin-left:20px; margin-top:120px" type="submit" name="company" value="betsol"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 element-animate ">
+            <a class="img-bg" style="background-image: url('images/dell.png');">
+              <div class="text">
+                <p></p>
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input style="border:1px solid red;background-color: transparent; margin-left:20px; margin-top:120px" type="submit" name="company" value="dell"/>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 </form>
   
  
