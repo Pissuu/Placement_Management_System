@@ -11,7 +11,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registration Form</title>
+    <title>Add Students</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -32,7 +32,7 @@
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Add Student</h2>
+                    <h2 class="title">Add Students</h2>
                 </div>
                 <div class="card-body">
                     <form method="POST" action="add2.php">
@@ -49,75 +49,56 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="name">Branch ID</div>
+                        <div class="form-row">
+                            <div class="name">Branch ID</div>
                             <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="branch_id">
-                                            </div>
-                                    </div>
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="branch_id">
                                 </div>
                             </div>
                         </div>
-                          <div class="name">Phone number</div>
+                        <div class="form-row">
+                            <div class="name">Phone Number</div>
                             <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="st_ph_no">
-                                            </div>
-                                    </div>
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="st_ph_no">
                                 </div>
                             </div>
                         </div>
-
-                        <div class="name">10th marks</div>
+                        <div class="form-row">
+                            <div class="name">10th Marks</div>
                             <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="st_10th">
-                                            </div>
-                                    </div>
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="st_10th">
                                 </div>
                             </div>
                         </div>
-                        <div class="name">12th marks</div>
+                        <div class="form-row">
+                            <div class="name">12th Marks</div>
                             <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="st_12th">
-                                            </div>
-                                    </div>
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="st_12th">
                                 </div>
                             </div>
                         </div>
-                        <div class="name">CGPA</div>
+                        <div class="form-row">
+                            <div class="name">CGPA</div>
                             <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="st_cgpa">
-                                            </div>
-                                    </div>
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="st_cgpa">
                                 </div>
                             </div>
                         </div>
-                        <div class="name">Backlogs</div>
+                        <div class="form-row">
+                            <div class="name">Backlogs</div>
                             <div class="value">
-                                <div class="row row-space">
-                                    <div class="col-2">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="backlogs">
-                                            </div>
-                                    </div>
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="backlogs">
                                 </div>
                             </div>
                         </div>
                         <div>
-                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Add</button></p>
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Add</button>
                         </div>
                     </form>
                 </div>
