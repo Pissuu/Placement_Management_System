@@ -90,10 +90,7 @@ catch(PDOException $e) {
 $conn = null;
 echo "</table>";
 ?>
-<div>
-                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="Remove" style="margin-top:100px;">Remove</button></p>
-                           
-                        </div>
+
 </form>
 <form method="POST" action="add.php">
     <div>

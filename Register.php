@@ -38,12 +38,12 @@
                 <div class="card-body">
                     <form method="POST" action="Register1.php">
                         <div class="form-row m-b-55">
-                            <div class="name">User Name</div>
+                            <div class="name">User ID</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="first_name">
+                                            <input class="input--style-5" type="text" name="user_id">
                                             
                                         </div>
                                     </div>
@@ -56,13 +56,12 @@
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
                                         <select name="company">
-                                            <option disabled="disabled" selected="selected">Choose option</option>
-                                            <option>Accenture</option>
-                                            <option>Thoughtclan</option>
-                                            <option>Betsol</option>
-                                            <option>Cognizant</option>
-                                            <option>KPMG</option>
-                                            <option>Dell</option>
+                                            <option value="1053">Accenture</option>
+                                            <option value="1048">Thoughtclan</option>
+                                            <option value="1004">Betsol</option>
+                                            <option value="1055">Cognizant</option>
+                                            <option value="1054">KPMG</option>
+                                            <option value="1056">Dell</option>
                                         </select>
                                         <div class="select-dropdown"></div>
                                     </div>

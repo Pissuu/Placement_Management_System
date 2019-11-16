@@ -50,6 +50,14 @@
                             </div>
                         </div>
                         <div class="form-row">
+                            <div class="name">Company ID</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company_id">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
                             <div class="name">Date</div>
                             <div class="value">
                                 <div class="input-group">

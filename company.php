@@ -89,7 +89,9 @@ $conn = null;
 echo "</table>";
 ?>
 <div>
-                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="Remove" style="margin-top:100px;">Remove</button></p>
+    </form>
+<form method="POST" action="Cremove.php">
+         <p> <button class="btn btn--radius-2 btn--red" type="submit" name="Remove" style="margin-top:100px;">Remove</button></p>
                            
                         </div>
 </form>

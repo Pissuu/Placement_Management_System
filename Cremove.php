@@ -1,9 +1,3 @@
-<html>
-<script type="text/javascript">
-window.alert("successfull Deletion");
-window.location="coe.php";
-</script>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,15 +42,16 @@ window.location="coe.php";
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="c_id">
+                                            <input class="input--style-5" type="text" name="comp_id">
                                             
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                       
                         <div>
-                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Remove</button></p>
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Remove</button>
                         </div>
                     </form>
                 </div>
