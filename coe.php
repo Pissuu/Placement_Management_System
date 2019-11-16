@@ -62,7 +62,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 element-animate ">
-            <a href="Register.html" class="img-bg" style="background-image: url('images/register.jpg');">
+            <a href="Register.php" class="img-bg" style="background-image: url('images/register.jpg');">
               <div class="text">
                 <p>Register Now</p>
               </div>

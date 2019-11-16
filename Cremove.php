@@ -1,13 +1,10 @@
-<?php
-$con=mysqli_connect("localhost","root","","placement_mngmt_syst");
-if(mysqli_connect_errno())
-{
-	echo "error";
-}
-$co_id=$_POST['c_id'];
-$sql="delete from company where company_id='$co_id'";
-$result=$con->query($sql);
-?>
+<html>
+<script type="text/javascript">
+window.alert("successfull Deletion");
+window.location="coe.php";
+</script>
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +17,7 @@ $result=$con->query($sql);
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registration Form</title>
+    <title>Remove Company</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -44,7 +41,7 @@ $result=$con->query($sql);
                     <h2 class="title">Remove Company</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="Cremove.php">
+                    <form method="POST" action="CompRemove.php">
                         <div class="form-row m-b-55">
                             <div class="name">Company ID</div>
                             <div class="value">

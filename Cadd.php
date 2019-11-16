@@ -1,15 +1,7 @@
-<?php
-$con=mysqli_connect("localhost","root","","placement_mngmt_syst");
-if(mysqli_connect_errno())
-{
-	echo "error";
-}
-$user_id=$_POST['user_id'];
-$sql="insert into company ;
-$result=$con->query($sql);
-?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags-->
     <meta charset="UTF-8">
@@ -19,7 +11,7 @@ $result=$con->query($sql);
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Registration Form</title>
+    <title>Add Company</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -40,25 +32,49 @@ $result=$con->query($sql);
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Remove Company</h2>
+                    <h2 class="title">Add Company</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="add.php">
+                    <form method="POST" action="Cadd2.php">
                         <div class="form-row m-b-55">
-                            <div class="name">Company ID</div>
+                            <div class="name">Company Name</div>
                             <div class="value">
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="user_id">
+                                            <input class="input--style-5" type="text" name="comp_name">
                                             
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="name">Date</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="dte">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">CTC</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="ctc">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Job Description</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="jd">
+                                </div>
+                            </div>
+                        </div>
                         <div>
-                           <p> <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Remove</button></p>
+                            <button class="btn btn--radius-2 btn--red" type="submit" name="submit">Add</button>
                         </div>
                     </form>
                 </div>

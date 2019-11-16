@@ -36,7 +36,7 @@
                     <h2 class="title">Registration Form</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="Register.php">
+                    <form method="POST" action="Register1.php">
                         <div class="form-row m-b-55">
                             <div class="name">User Name</div>
                             <div class="value">
@@ -54,7 +54,18 @@
                             <div class="name">Company Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="company">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="company">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Accenture</option>
+                                            <option>Thoughtclan</option>
+                                            <option>Betsol</option>
+                                            <option>Cognizant</option>
+                                            <option>KPMG</option>
+                                            <option>Dell</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
